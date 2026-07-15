@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
 </head>
 
 <body>
@@ -23,7 +21,8 @@
 
                 <div class="sidebar__logo">
                     <img src="assets/images/logo.svg" alt="Maison Soleil" class="sidebar__logo-image">
-                    <button class="sidebar--close-btn"><i class="fa-solid fa-x"></i></button>
+                    <button class="sidebar--close-btn"><i class="fa-solid fa-x"
+                            aria-label="Close Navigation"></i></button>
                 </div>
 
                 <nav class="sidebar__nav">
@@ -94,7 +93,8 @@
             <header class="main-header">
                 <div class="main-header__responsive-navBar">
                     <img src="assets/images/logo.svg" alt="" class="responsive-navBar-logo">
-                    <button class="responsive-navBar-button"><i class="fa-solid fa-bars"></i></button>
+                    <button class="responsive-navBar-button"><i class="fa-solid fa-bars"
+                            aria-label="Open Navigation"></i></button>
                 </div>
 
                 <div class="main-header__wrapper">
@@ -308,19 +308,17 @@
     </div>
 
     <script>
-const menuButton = document.querySelector(".responsive-navBar-button");
-const closeButton = document.querySelector(".sidebar--close-btn");
-const sideBar = document.querySelector(".sidebar");
+        if (menuButton && sideBar) {
+            menuButton.addEventListener("click", () => {
+                sideBar.classList.add("sidebar--open");
+            });
+        }
 
-menuButton.addEventListener("click", () => {
-    sideBar.classList.remove("sidebar--close");
-    sideBar.classList.add("sidebar--open");
-});
-
-closeButton.addEventListener("click", () => {
-    sideBar.classList.remove("sidebar--open");
-    sideBar.classList.add("sidebar--close");
-});
+        if (closeButton && sideBar) {
+            closeButton.addEventListener("click", () => {
+                sideBar.classList.remove("sidebar--open");
+            });
+        }
     </script>
 </body>
 
