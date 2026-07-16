@@ -15,7 +15,7 @@ This is my solution to the Hotel Booking Confirmation Page challenge on Frontend
 ### Links
 
 - Live Site: https://fm-hotel-booking-confirmation.netlify.app/
-- Repository: https://github.com/fatihkeleess/frontend-mentor/tree/main/hotel-booking-confirmation
+- Repository: https://github.com/elzorrodev/frontend-mentor/tree/main/hotel-booking-confirmation
 
 ## Built with
 
