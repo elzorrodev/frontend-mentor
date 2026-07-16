@@ -70,6 +70,7 @@ body {
 img,
 picture,
 svg {
+
     display: block;
 
     max-width: 100%;
@@ -82,6 +83,7 @@ a {
 }
 
 button {
+
     padding: 0;
 
     border: none;
@@ -98,6 +100,7 @@ button {
 input,
 textarea,
 select {
+
     color: inherit;
 
     font: inherit;
@@ -110,21 +113,108 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
 
     color: var(--clr-neutral-700);
-    
+
     font-weight: var(--fw-semibold);
 
 }
 
 
-p{
+p {
 
     color: var(--clr-neutral-500);
 
     font-weight: var(--fw-regular);
 }
 
+/* Buttons */
 
 
+.hero__button {
+
+    color: #fff;
+
+    padding: 1rem 3rem;
+
+    border-radius: 3rem;
+
+}
+
+
+.hero__button--ios {
+
+    background-color: var(--clr-primary);
+
+    box-shadow: 0 5px 1px var(--clr-primary);
+
+}
+
+.hero__button--mac {
+
+    background-color: var(--clr-secondary);
+
+    box-shadow: 0 5px 1px var(--clr-secondary);
+
+}
+
+
+
+/* =========================================
+    SECTIONS CSS
+
+ ======================================== */
+
+
+.hero,
+.hero__content {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero {
+
+    background-image: url('images/bg-header-desktop.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    align-items: center;
+
+    padding-block: 8rem;
+}
+
+
+.hero__content {
+
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.hero__actions {
+
+    display: flex;
+
+    gap: 2rem;
+
+    margin-top: 3rem;
+
+    font-size: 1.6rem;
+}
+
+
+.hero__title {
+
+    font-size: 4rem;
+}
+
+
+.hero__description {
+
+    max-width: 66rem;
+}
