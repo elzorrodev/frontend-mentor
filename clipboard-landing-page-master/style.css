@@ -167,6 +167,9 @@ p {
  ======================================== */
 
 
+ /* Hero section start */
+
+
 .hero,
 .hero__content {
 
@@ -217,4 +220,53 @@ p {
 .hero__description {
 
     max-width: 66rem;
+}
+
+
+
+/* Snippets section start */
+
+
+.snippets{
+
+    display: grid;
+    
+    gap: 8rem;
+
+}
+
+
+.snippets__header{
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.snippets__description{
+
+    max-width: 70rem;
+}
+
+
+
+.snippets__content{
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    
+
+}
+
+
+
+.snippets__features{
+
+     max-width: 40rem;
+
+    margin-right: 13rem;
 }
